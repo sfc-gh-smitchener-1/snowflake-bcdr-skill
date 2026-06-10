@@ -4,7 +4,7 @@
 >
 > **Audience.** SEs, SAs, RSAs, and other Snowflake technical teams.
 >
-> **What this demonstrates.** The output of running the [`snowflake-bcdr-tailoring`](../../../.cursor/skills/snowflake-bcdr-tailoring/SKILL.md) skill over the generic templates in [`../`](../). It is the **AWS** counterpart to the Azure example in `CustomerDocs/Astra/` — same structure, different cloud, so you can see how the cloud-specific tokens resolve.
+> **What this demonstrates.** The output of running the [`snowflake-bcdr-tailoring`](../../SKILL.md) skill over the generic templates in [`../`](../). It is an **AWS** worked example (the templates were generalized from an Azure engagement) — so you can see how the cloud-specific tokens resolve. The contrast table below maps the AWS and Azure equivalents.
 
 ---
 
@@ -63,7 +63,7 @@
 
 ## Contrast with the Azure example
 
-| Concern | This sample (AWS) | Astra (Azure) |
+| Concern | This sample (AWS) | Azure equivalent |
 |---|---|---|
 | Private connectivity | AWS PrivateLink (VPC endpoints) | Azure Private Link (private endpoints) |
 | External-stage store | Amazon S3 | ADLS Gen2 / Blob |

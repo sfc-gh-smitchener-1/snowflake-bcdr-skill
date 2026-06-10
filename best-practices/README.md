@@ -1,8 +1,8 @@
 # Snowflake BCDR — Best-Practice Document Set (Generic)
 
-> **Purpose.** A reusable, customer-agnostic Snowflake business-continuity / disaster-recovery doc set, grounded in Snowflake documentation. It is the canonical source that gets **tailored per customer** (e.g., `CustomerDocs/Astra/`) using the customer's planning docs, meeting recordings, and transcripts.
+> **Purpose.** A reusable, customer-agnostic Snowflake business-continuity / disaster-recovery doc set, grounded in Snowflake documentation. It is the canonical source that gets **tailored per customer** (into your project's `CustomerDocs/<CUSTOMER>/`) using the customer's planning docs, meeting recordings, and transcripts.
 >
-> **Origin.** Generalized from the Astra DR engagement (`../../CustomerDocs/Astra/`) and reconciled against current Snowflake docs (see references in `DR-Best-Practices.md`).
+> **Origin.** Generalized from a real Azure DR engagement and reconciled against current Snowflake docs (see references in `DR-Best-Practices.md`). For a fully worked example, see [`sample/`](./sample/).
 
 ---
 
@@ -20,13 +20,13 @@
 
 ## How to tailor this to a customer
 
-Use the **[`snowflake-bcdr-tailoring`](../../.cursor/skills/snowflake-bcdr-tailoring/SKILL.md)** skill, or do it manually:
+Use the **[`snowflake-bcdr-tailoring`](../SKILL.md)** skill, or do it manually:
 
 1. Gather the customer's inputs (DR planning doc, architecture notes, meeting recordings/transcripts).
 2. Extract the values for every token in [`PLACEHOLDERS.md`](./PLACEHOLDERS.md).
 3. Copy the two templates + the best-practices doc into `CustomerDocs/<CUSTOMER>/`, renamed with the customer prefix.
 4. Replace every `<TOKEN>`; delete inapplicable sections (e.g., private-connectivity if public); re-rank the scorecard.
-5. Add a customer `README.md` index (pattern: `../../CustomerDocs/Astra/README.md`).
+5. Add a customer `README.md` index (pattern: [`sample/README.md`](./sample/README.md)).
 
 ---
 

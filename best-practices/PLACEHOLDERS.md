@@ -9,29 +9,29 @@ Keep the token names identical across documents so cross-references line up.
 
 | Token | Meaning | Example |
 |---|---|---|
-| `<CUSTOMER>` | Customer / company display name | `Voya` |
-| `<ORG>` | Snowflake organization name | `VOYA` |
-| `<PROD_ACCOUNT>` | Primary (production) account locator | `VOYA_PROD` |
-| `<DR_ACCOUNT>` | DR (secondary) account locator | `VOYA_PROD_DR` |
+| `<CUSTOMER>` | Customer / company display name | `Meridian Financial` |
+| `<ORG>` | Snowflake organization name | `MERIDIAN` |
+| `<PROD_ACCOUNT>` | Primary (production) account locator | `MERIDIAN_PROD` |
+| `<DR_ACCOUNT>` | DR (secondary) account locator | `MERIDIAN_DR` |
 
 ## Workload being protected
 
 | Token | Meaning | Example |
 |---|---|---|
-| `<WORKLOAD>` | Name of the tenant/app/workload getting DR | `Astra` |
-| `<APP_DB>` | Primary database for the workload | `IMDATAVAULT_PROD` |
-| `<APP_DB>_DRTEST` | Throwaway clone name for non-destructive testing | `IMDATAVAULT_PROD_DRTEST` |
-| `<TEST_RUNNER_ROLE>` | Role used to validate the clone / DR | `ASTRA_DR_TEST_RUNNER` |
+| `<WORKLOAD>` | Name of the tenant/app/workload getting DR | `Helios` |
+| `<APP_DB>` | Primary database for the workload | `HELIOS_ANALYTICS_PROD` |
+| `<APP_DB>_DRTEST` | Throwaway clone name for non-destructive testing | `HELIOS_ANALYTICS_PROD_DRTEST` |
+| `<TEST_RUNNER_ROLE>` | Role used to validate the clone / DR | `HELIOS_DR_TEST_RUNNER` |
 
 ## Failover groups & connection
 
 | Token | Meaning | Example |
 |---|---|---|
 | `FG_ACCOUNT_LEVEL` | Failover group for account objects (roles, users, warehouses, …) | `FG_ACCOUNT_LEVEL` |
-| `FG_<WORKLOAD>_DB` | Failover group holding `<APP_DB>` and its dependents | `FG_ASTRA_DB` |
-| `FG_NON_<WORKLOAD>_DBS` | Failover group cataloguing the other databases (not promoted on a workload failover) | `FG_NON_ASTRA_DBS` |
-| `<WORKLOAD>_CONN` | Client Redirect connection object | `ASTRA_CONN` |
-| `<CONNECTION_URL>` | Stable connection URL exposed to consumers | `VOYA-ASTRA_CONN.snowflakecomputing.com` |
+| `FG_<WORKLOAD>_DB` | Failover group holding `<APP_DB>` and its dependents | `FG_HELIOS_DB` |
+| `FG_NON_<WORKLOAD>_DBS` | Failover group cataloguing the other databases (not promoted on a workload failover) | `FG_NON_HELIOS_DBS` |
+| `<WORKLOAD>_CONN` | Client Redirect connection object | `HELIOS_CONN` |
+| `<CONNECTION_URL>` | Stable connection URL exposed to consumers | `MERIDIAN-HELIOS_CONN.snowflakecomputing.com` |
 | `<REFRESH_INTERVAL>` | Failover-group replication schedule (worst-case RPO) | `10 MINUTE` |
 
 ## Cloud & networking

@@ -1,6 +1,6 @@
 # Snowflake BCDR — Best-Practice Recommendations (Generic)
 
-> **What this is.** A customer-agnostic set of Snowflake business-continuity / disaster-recovery best practices, grounded in Snowflake documentation. It is the reference from which a per-customer `*-DR-Best-Practices.md` is tailored (see [`README.md`](./README.md) and the [tailoring skill](../../.cursor/skills/snowflake-bcdr-tailoring/SKILL.md)).
+> **What this is.** A customer-agnostic set of Snowflake business-continuity / disaster-recovery best practices, grounded in Snowflake documentation. It is the reference from which a per-customer `*-DR-Best-Practices.md` is tailored (see [`README.md`](./README.md) and the [tailoring skill](../SKILL.md)).
 >
 > **How to read it.** Each recommendation states **what to do**, **why**, and **the risk of not doing it**. Principles are universal; the cloud-specific mechanics (private connectivity, object storage, pipe plumbing) are flagged and resolved per cloud via [`PLACEHOLDERS.md`](./PLACEHOLDERS.md).
 >

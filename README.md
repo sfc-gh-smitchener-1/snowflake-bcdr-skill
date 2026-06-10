@@ -61,9 +61,9 @@ In a Cortex Code session, provide your customer inputs and say something like:
 
 > "Tailor the BCDR templates for Acme Corp — planning doc is attached"
 
-> "Build a DR runbook for Voya, Azure East US 2 → Central US, private link, Business Critical"
+> "Build a DR runbook for Globex, Azure East US 2 → Central US, private link, Business Critical"
 
-> "Update the Nuveen DR set with the notes from today's call"
+> "Update the Initech DR set with the notes from today's call"
 
 Triggers that activate the skill: `BCDR`, `disaster recovery`, `DR runbook`, `failover group`, `client redirect`, `RPO/RTO`, `tailor DR docs`, `backup`, `replication`, `business continuity`.
 

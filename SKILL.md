@@ -98,7 +98,7 @@ Key extraction targets:
 - **Edition** — Business Critical? (gates Failover Groups + Client Redirect). If unstated, mark assumed-and-confirm.
 - **Cloud + regions** — sets the cloud-specific tokens (private connectivity, object store, RBAC role, pipe plumbing) via the cheat sheet in `PLACEHOLDERS.md`.
 - **Workload + database** — `<WORKLOAD>`, `<APP_DB>`, and failover-group names derived from them.
-- **Shared-account constraint** — one tenant on a shared account (Astra pattern), or full-account DR? Decides whether the `FG_NON_<WORKLOAD>_DBS` separation and §7 "impact on other apps" sections stay.
+- **Shared-account constraint** — one tenant on a shared account (the single-tenant-on-shared-account pattern in `best-practices/sample/`), or full-account DR? Decides whether the `FG_NON_<WORKLOAD>_DBS` separation and §7 "impact on other apps" sections stay.
 - **Private vs public connectivity** — decides whether DNS/OCSP steps stay or are deleted.
 - **Replication gaps in use** — inbound shares, append-only streams, external/hybrid/event tables actually present.
 
@@ -129,7 +129,7 @@ correction and annotate with a `> **Note (doc refresh):**` callout.
 
 ### Step 6 — Customer README index
 
-Write `CustomerDocs/<CUSTOMER>/README.md` following the pattern of the Astra example:
+Write `CustomerDocs/<CUSTOMER>/README.md` following the pattern in `best-practices/sample/README.md`:
 purpose + constraint, source, "Documents in this set" table, "Design at a glance" table,
 and the "critical gaps to close before the first drill" list.
 
