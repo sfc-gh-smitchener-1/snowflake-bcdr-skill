@@ -27,15 +27,6 @@ best-practices/
   DR-Failover-Failback-Runbook-Template.md← Template → <CUSTOMER>-DR-Failover-Failback-Runbook.md
   PLACEHOLDERS.md                         ← Every <TOKEN> + cloud cheat sheet (AWS/Azure/GCP)
   sample/                                 ← Fully worked example (fictional AWS customer "Meridian")
-sql/
-  00_enable_replication.sql
-  01_primary_setup.sql
-  02_git_integration.sql
-  03_failover_group.sql
-  04_secondary_setup.sql
-  05_connection_failover.sql
-  06_streamlit_deploy.sql
-  99_cleanup.sql
 ```
 
 ---
@@ -85,7 +76,6 @@ To update the templates:
 RSA / Product team members: PRs welcome for:
 - New best-practice sections as Snowflake adds BCDR capabilities
 - Additional cloud-specific cheat sheet entries in `PLACEHOLDERS.md`
-- Updated SQL scripts when DDL syntax changes
 - New sample worked examples (additional clouds, multi-workload patterns)
 
 ---

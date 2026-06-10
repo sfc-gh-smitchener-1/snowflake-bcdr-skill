@@ -62,7 +62,6 @@ Paths are relative to this skill's base directory:
 | `best-practices/DR-Summary-Template.md` | Copy → `<CUSTOMER>-DR-Summary.md` in project dir |
 | `best-practices/DR-Failover-Failback-Runbook-Template.md` | Copy → `<CUSTOMER>-DR-Failover-Failback-Runbook.md` in project dir |
 | `best-practices/sample/` | Fully filled-in worked example (fictional AWS customer "Meridian") — reference for tone and depth |
-| `sql/` | Reference SQL scripts for failover group setup, connection failover, and cleanup |
 
 ---
 
